@@ -1,0 +1,29 @@
+{
+  "name": "mocha_team",
+  "version": "1.0.0",
+  "description": "",
+  "main": "default_test.js",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "nyc npm run test",
+    "mocha-reporter":"mocha --reporter mocha-teamcity-reporter test",
+    "msreporter":"mocha --reporter mochawesome",
+    "open:report": "open mochawesome-report/mochawesome.html",
+    "toolsapi":"apigeetool deployExistingRevision -u divyansh.jain@neosalpha.com -p Dj@17091997 -o divyanshjain-eval -e prod -n Mock -r 7"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "mocha-simple-html-reporter": "^1.1.0",
+    "mocha-teamcity-reporter": "^3.0.0",
+    "mochawesome": "^6.2.1",
+    "mochawesome-report-generator": "^5.1.0",
+    "nyc": "^15.1.0"
+  },
+  "dependencies": {
+    "apigeelint": "^2.3.0",
+     "apigeetool": "^0.15.0"
+  }
+}
