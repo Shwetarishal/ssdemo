@@ -6,7 +6,7 @@ var logic = require('../default_test')
 
 describe('CASE',function(){
     it('Case should run' , function(){
-        expect(logic()).to.eql('hello theree');
+        expect(logic()).to.eql('hello there');
     })
      it('2nd Case is running' , function(){
         expect(logic()).to.eql('hello there');
